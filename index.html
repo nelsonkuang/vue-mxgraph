@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>vue-mxgraph</title>
+  <script type="text/javascript">
+    mxBasePath = 'static/src';
+  </script>
+  <script type="text/javascript" src="static/src/js/mxClient.js"></script>
+  <script type="text/javascript" src="static/examples/editors/js/app.js"></script>
+  <script type="text/javascript">
+    mxGraph.prototype.htmlLabels = true;
+
+    mxGraph.prototype.isWrapping = function (cell) {
+      return true;
+    };
+
+    mxConstants.DEFAULT_HOTSPOT = 1;
+
+    // Enables guides
+    mxGraphHandler.prototype.guidesEnabled = true;
+
+    // Alt disables guides
+    mxGuide.prototype.isEnabledForEvent = function (evt) {
+      return !mxEvent.isAltDown(evt);
+    };
+
+    // Enables snapping waypoints to terminals
+    mxEdgeHandler.prototype.snapToTerminals = true;
+
+    window.onbeforeunload = function () {
+      return mxResources.get('changesLost');
+    };
+
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<mxDefaultToolbar>
+	<add as="保存" action="save" icon="static/examples/editors/images/save.gif"/>
+	<add as="预览" action="show" icon="static/examples/editors/images/preview.gif"/>
+	<add as="打印" action="print" icon="static/examples/editors/images/print.gif"/>
+	<add as="导出图片" action="exportImage" icon="static/examples/editors/images/image.gif"/>
+	<br/><hr/>
+	<add as="select" mode="select" icon="static/examples/editors/images/select.gif"/>
+	<add as="pan" mode="pan" icon="static/examples/editors/images/pan.gif"/>
+	<add as="connect" mode="connect" icon="static/examples/editors/images/connect.gif"><![CDATA[
+		function (editor)
+		{
+			if (editor.defaultEdge != null)
+			{
+				editor.defaultEdge.style = null;
+			}
+		}
+	]]></add>
+	<add as="connect" mode="connect" icon="static/examples/editors/images/straight.gif"><![CDATA[
+		function (editor)
+		{
+			if (editor.defaultEdge != null)
+			{
+				editor.defaultEdge.style = 'straightEdge';
+			}
+		}
+	]]></add>
+	<br/><hr/>
+	<add as="undo" action="undo" icon="static/examples/editors/images/undo.gif"/>
+	<add as="redo" action="redo" icon="static/examples/editors/images/redo.gif"/>
+	<br/><hr/>
+	<add as="cut" action="cut" icon="static/examples/editors/images/cut.gif"/>
+	<add as="copy" action="copy" icon="static/examples/editors/images/copy.gif"/>
+	<add as="paste" action="paste" icon="static/examples/editors/images/paste.gif"/>
+	<add as="delete" action="delete" icon="static/examples/editors/images/delete.gif"/>
+	<br/><hr/>
+	<add as="group" action="group" icon="static/examples/editors/images/group.gif"/>
+	<add as="ungroup" action="ungroup" icon="static/examples/editors/images/ungroup.gif"/>
+	<br/><hr/>
+	<add as="Swimlane" template="swimlane" icon="static/examples/editors/images/swimlane.gif"/>
+	<add as="Task" template="task" icon="static/examples/editors/images/rectangle.gif"/>
+	<add as="Subprocess" template="subprocess" icon="static/examples/editors/images/rounded.gif"/>
+	<add as="Ellipse" template="shape" style="ellipse" icon="static/examples/editors/images/ellipse.gif"/>
+	<add as="Rhombus" template="shape" style="rhombus" icon="static/examples/editors/images/rhombus.gif"/>
+	<add as="Actor" template="shape" style="actor" icon="static/examples/editors/images/actor.gif"/>
+	<br/><hr/>
+	<add as="Event" template="symbol" style="symbol;image=static/examples/editors/images/symbols/event.png" icon="static/examples/editors/images/symbols/small_event.gif"/>
+	<add as="Event (Intermediate)" template="symbol" style="symbol;image=static/examples/editors/images/symbols/event_intermediate.png" icon="static/examples/editors/images/symbols/small_event_intermediate.gif"/>
+	<add as="Event (End)" template="symbol" style="symbol;image=static/examples/editors/images/symbols/event_end.png" icon="static/examples/editors/images/symbols/small_event_end.gif"/>
+	<add as="Timer" template="symbol" style="symbol;image=static/examples/editors/images/symbols/timer.png" icon="static/examples/editors/images/symbols/small_timer.gif"/>
+	<add as="Message" template="symbol" style="symbol;image=static/examples/editors/images/symbols/message.png" icon="static/examples/editors/images/symbols/small_message.gif"/>
+	<add as="Message (Intermediate)" template="symbol" style="symbol;image=static/examples/editors/images/symbols/message_intermediate.png" icon="static/examples/editors/images/symbols/small_message_intermediate.gif"/>
+	<add as="Message (End)" template="symbol" style="symbol;image=static/examples/editors/images/symbols/message_end.png" icon="static/examples/editors/images/symbols/small_message_end.gif"/>
+	<add as="Terminate" template="symbol" style="symbol;image=static/examples/editors/images/symbols/terminate.png" icon="static/examples/editors/images/symbols/small_terminate.gif"/>
+	<add as="Link" template="symbol" style="symbol;image=static/examples/editors/images/symbols/link.png" icon="static/examples/editors/images/symbols/small_link.gif"/>
+	<add as="Rule" template="symbol" style="symbol;image=static/examples/editors/images/symbols/rule.png" icon="static/examples/editors/images/symbols/small_rule.gif"/>
+	<add as="Multiple" template="symbol" style="symbol;image=static/examples/editors/images/symbols/multiple.png" icon="static/examples/editors/images/symbols/small_multiple.gif"/>
+	<add as="Error" template="symbol" style="symbol;image=static/examples/editors/images/symbols/error.png" icon="static/examples/editors/images/symbols/small_error.gif"/>
+	<add as="Cancel (End)" template="symbol" style="symbol;image=static/examples/editors/images/symbols/cancel_end.png" icon="static/examples/editors/images/symbols/small_cancel_end.gif"/>
+	<add as="Cancel (Intermediate)" template="symbol" style="symbol;image=static/examples/editors/images/symbols/cancel_intermediate.png" icon="static/examples/editors/images/symbols/small_cancel_intermediate.gif"/>
+	<add as="Fork" template="symbol" style="symbol;image=static/examples/editors/images/symbols/fork.png" icon="static/examples/editors/images/symbols/small_fork.gif"/>
+	<add as="Merge" template="symbol" style="symbol;image=static/examples/editors/images/symbols/merge.png" icon="static/examples/editors/images/symbols/small_merge.gif"/>
+	<add as="Inclusive" template="symbol" style="symbol;image=static/examples/editors/images/symbols/inclusive.png" icon="static/examples/editors/images/symbols/small_inclusive.gif"/>
+	<br/><hr/>
+	<add as="fit" action="fit" icon="static/examples/editors/images/zoom.gif"/>
+	<add as="zoomIn" action="zoomIn" icon="static/examples/editors/images/zoomin.gif"/>
+	<add as="zoomOut" action="zoomOut" icon="static/examples/editors/images/zoomout.gif"/>
+	<add as="actualSize" action="actualSize" icon="static/examples/editors/images/zoomactual.gif"/>
+	<add as="zoom" action="zoom" icon="static/examples/editors/images/zoom.gif"/>
+	<br/><hr/>
+	<add as="outline" action="toggleOutline" icon="static/examples/editors/images/outline.gif"/>
+	<add as="tasks" action="toggleTasks" icon="static/examples/editors/images/tasks.gif"/>
+	<add as="help" action="toggleHelp" icon="static/examples/editors/images/help.gif"/>
+	<add as="console" action="toggleConsole" icon="static/examples/editors/images/console.gif"/>
+</mxDefaultToolbar>
